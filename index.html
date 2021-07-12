@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #box {
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+            background: url("images/51.jpg") no-repeat;
+            background-size: cover;
+            background-color: deepskyblue;
+            transition: all 1s;
+            position: absolute;
+            top: 280px;
+        }
+
+        .header {
+            width: 100%;
+            height: 250px;
+            background: url('images/top.jpg') no-repeat;
+            background-color: #C3F5FE;
+            background-size: 100%;
+            padding: 0px;
+            text-align: right;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav {
+            width: 100%;
+            height: 25px;
+            margin: 0 auto;
+            position: absolute;
+            background-color: #E4F3EC;
+            top: 255px;
+        }
+
+        .nav li {
+            margin-right: 25px;
+            padding: 0;
+            line-height: 25px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav li a {
+            color: #0266A3;
+        }
+
+        .nav li:hover a {
+            color: black;
+        }
+    </style>
+    <script>
+        var i = 51;
+        var time = setTimeout("show()", 2000);
+        function show() {
+            i++;
+            if (i == 61) {
+                i = 51;
+            }
+            document.getElementById("box").style.background = "url( images/" + i + ".jpg) no-repeat";
+            document.getElementById("box").style.backgroundSize = "cover";
+            time = setTimeout("show()", 2000);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class='txetcolor'>生活中总有不期而遇的美好。</h1>
+        <h2 class='txetcolor'>By FromTeyvat</h2>
+    </div>
+    <div id="box">
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="">图片轮播</a></li>
+            <li><a href="/about.html">美照展示</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
