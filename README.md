@@ -6,7 +6,7 @@
 ### 安装
 克隆此项目至本地：
 ```
-git clone https://github.com/FromTeyvat/FromTeyvat.github.io
+git clone https://github.com/FromTeyvat/FromTeyvat.github.io.git
 ```
 切换至本地路径
 ```
